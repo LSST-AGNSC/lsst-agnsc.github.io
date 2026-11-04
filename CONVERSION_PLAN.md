@@ -13,7 +13,7 @@ every static page, drop everything that needed PHP.
 ## Status (2026-11-04)
 
 Built on branch `static-site`, verified locally with Jekyll 3.10 (the version GitHub Pages runs).
-Done: all nine pages as Markdown, Documents/Talks lists with description and date, Members
+Done: all nine pages as Markdown, Documents/Talks lists with description and date (Documents also lists the newer files from the server dump: 2025 publication policy v3, OpenProject guide, earlier charter revisions), Members
 restored from the November 2024 archive, sidebar quick links, Contact placeholders, old
 `?q=` addresses redirected, 52 legacy file stubs under `/sites/default/files/`, theme CSS
 repaired (two syntax slips in the original broke its phone-size rules), mobile menu script.
