@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% if page.url == "/" %}{{ site.title }}{% else %}{{ page.title }}{% endif %} | {{ site.title }}</title>
+  <link rel="icon" type="image/png" href="{{ '/assets/images/lsst_agn_logo_tiny_0.png' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" media="all" />
+  <link rel="stylesheet" href="{{ '/assets/css/extra.css' | relative_url }}" media="all" />
+  <script>
+  /* Old Drupal addresses looked like /?q=meetings or /?q=node/51. Send them to the new pages. */
+  (function () {
+    var m = /[?&]q=([^&#]+)/.exec(location.search); if (!m) return;
+    var q = decodeURIComponent(m[1]).replace(/^\/+|\/+$/g, '');
+    var nodes = {'node/1': '', 'home': '', 'node/4': 'members', 'node/6': 'contact', 'node/39': 'apply', 'node/55': 'meeting2025',
+      'node/37': 'documents', 'node/41': 'documents', 'node/42': 'documents', 'node/43': 'documents', 'node/44': 'documents', 'node/45': 'documents', 'node/51': 'documents',
+      'node/7': 'talks', 'node/8': 'talks', 'node/9': 'talks', 'node/10': 'talks', 'node/22': 'talks', 'node/33': 'talks', 'node/34': 'talks', 'node/35': 'talks', 'node/36': 'talks', 'node/40': 'talks',
+      'project_join_request': 'contact', 'publication_review': 'contact', 'publication_dispute': 'contact', 'general_inquiry': 'contact', 'user': ''};
+    if (nodes.hasOwnProperty(q)) q = nodes[q]; else if (!/^[a-z0-9_-]+$/.test(q)) q = '';
+    location.replace('{{ site.baseurl }}/' + (q ? q + '/' : ''));
+  })();
+  </script>
+</head>
+<body class="html {% if page.url == "/" %}front{% else %}not-front{% endif %} not-logged-in one-sidebar sidebar-first page-node node-type-page">
+<div id="wrapper">
+  <header id="header" class="clearfix">
+    <div id="site-logo"><a href="{{ '/' | relative_url }}" title="Home">
+      <img src="{{ '/assets/images/lsst_agn_logo_tiny_0.png' | relative_url }}" alt="Home" />
+    </a></div>
+    <div class="global-profile">
+      <ul>
+        <li class="public"><a target="_blank" title="{{ site.title }} in Public" href="http://www.lsst.org/">{{ site.title }} Public</a></li>
+        <li class="project"><a target="_blank" title="{{ site.title }} in project" href="https://project.lsst.org">{{ site.title }} project</a></li>
+        <li class="science"><a target="_blank" title="{{ site.title }} For Scientists" href="https://www.lsstcorporation.org">{{ site.title }} science</a></li>
+      </ul>
+    </div>
+    <nav id="navigation" role="navigation">
+      <div id="main-menu">
+        <ul class="menu">
+        {%- for item in site.data.navigation -%}
+          {%- assign children = empty -%}
+          {%- if item.children == "forms" -%}{%- assign children = site.data.forms | where_exp: "f", "f.url != ''" -%}{%- elsif item.children -%}{%- assign children = item.children -%}{%- endif -%}
+          <li class="{% if forloop.first %}first {% endif %}{% if forloop.last %}last {% endif %}{% if children.size > 0 %}expanded{% else %}leaf{% endif %}"><a href="{{ item.url | relative_url }}"{% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a>
+          {%- if children.size > 0 %}<ul class="menu">{% for c in children %}<li class="leaf"><a href="{{ c.url }}"{% if c.url contains '://' %} target="_blank" rel="noopener"{% endif %}>{{ c.title }}</a></li>{% endfor %}</ul>{% endif -%}
+          </li>
+        {%- endfor %}
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div id="main" class="clearfix">
+    <div id="primary">
+      <section id="content" role="main">
+        {% unless page.url == "/" %}<div id="breadcrumbs"><h2 class="element-invisible">You are here</h2><nav class="breadcrumb"><a href="{{ '/' | relative_url }}">Home</a> » {{ page.title }}</nav></div>{% endunless %}
+        <div id="content-wrap">
+          <h1 class="page-title">{% if page.url == "/" %}{{ site.title }}{% else %}{{ page.title }}{% endif %}</h1>
+          <div class="region region-content">
+            <div id="block-system-main" class="block block-system">
+              <div class="content">
+                <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even">
+{{ content }}
+                </div></div></div>
+              </div>
+            </div> <!-- /.block -->
+            {% if page.items %}{% include file-list.html %}{% endif %}
+          </div> <!-- /.region -->
+        </div>
+      </section> <!-- /#main -->
+    </div>
+
+    <aside id="sidebar" role="complementary">
+      <div class="region region-sidebar-first">
+        <div id="block-quick-links" class="block block-block">
+          <h2>Quick links</h2>
+          <div class="content">
+            {% capture sidebar %}{% include sidebar.md %}{% endcapture %}{{ sidebar | markdownify }}
+          </div>
+        </div> <!-- /.block -->
+      </div> <!-- /.region -->
+    </aside>
+  </div>
+
+  <footer id="footer-bottom">
+    <div id="footer-area" class="clearfix"></div>
+    <div id="bottom" class="clearfix">
+      <div class="copyright">LSST Science Collaborations &copy; {{ site.time | date: "%Y" }}, <a href="{{ '/' | relative_url }}">{{ site.title }}</a></div>
+      <div class="credit">Contact <a href="mailto:{{ site.webmaster_email }}" target="_blank">Webmaster</a></div>
+    </div>
+  </footer>
+</div>
+<script src="{{ '/assets/js/menu.js' | relative_url }}"></script>
+</body>
+</html>

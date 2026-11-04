@@ -1,0 +1,19 @@
+# Main menu, in order. 'url' is the page address; sub-items appear in a dropdown.
+# The Contact dropdown is filled from _data/forms.yml (only forms with a url are shown).
+- title: Home
+  url: /
+- title: Meetings
+  url: /meetings/
+- title: Projects
+  url: /projects/
+- title: Documents
+  url: /documents/
+- title: Talks
+  url: /talks/
+- title: Members
+  url: /members/
+- title: Apply
+  url: /apply/
+- title: Contact
+  url: /contact/
+  children: forms

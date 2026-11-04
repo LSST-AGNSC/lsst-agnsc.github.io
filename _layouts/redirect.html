@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  {%- assign url = site.data.files[page.file] -%}
+  {%- if url and url != "" %}
+  <meta http-equiv="refresh" content="0; url={{ url }}" />
+  <link rel="canonical" href="{{ url }}" />
+  <script>location.replace("{{ url }}");</script>
+  {%- endif %}
+  <title>{{ page.file }} | {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" media="all" />
+  <link rel="stylesheet" href="{{ '/assets/css/extra.css' | relative_url }}" media="all" />
+</head>
+<body class="html not-front no-sidebars page-node">
+<div id="wrapper"><div id="main" class="clearfix"><div id="primary"><section id="content" role="main"><div id="content-wrap" style="padding:2em">
+  <h1 class="page-title">{{ page.file }}</h1>
+  {%- if url and url != "" %}
+  <p>This file has moved to Google Drive. If you are not redirected, <a href="{{ url }}">open it here</a>.</p>
+  {%- else %}
+  <p>This file is being moved to Google Drive and is not available yet. Please check back later, or contact the <a href="mailto:{{ site.webmaster_email }}">webmaster</a>.</p>
+  {%- endif %}
+  <p><a href="{{ '/' | relative_url }}">Back to the {{ site.short_title }} home page</a></p>
+</div></section></div></div></div>
+</body>
+</html>

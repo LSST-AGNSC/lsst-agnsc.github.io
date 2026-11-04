@@ -1,0 +1,12 @@
+.DS_Store
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+Gemfile.lock
+vendor/
+# Local copies of the old uploads, kept for uploading to Google Drive; not published.
+_drive_upload/
+# Remaining pieces of the old Drupal files directory; safe to delete once the site is live.
+_drupal_dump/
+.claude/
