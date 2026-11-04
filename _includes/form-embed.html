@@ -1,0 +1,10 @@
+{%- comment -%} Shows the Google Form for page.form (a key in _data/forms.yml), or a notice while no form link is set. {%- endcomment -%}
+{%- assign f = site.data.forms | where: "key", page.form | first -%}
+{%- if f.url and f.url != "" -%}
+{%- assign embed = f.url -%}
+{%- if embed contains "docs.google.com/forms" and embed contains "viewform" -%}{%- assign embed = embed | split: "?" | first | append: "?embedded=true" -%}{%- endif -%}
+<p><a class="form-link" href="{{ f.url }}" target="_blank" rel="noopener">Open the {{ f.title }} form in a new window</a></p>
+<iframe class="form-embed" src="{{ embed }}" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0" title="{{ f.title }} form">Loading…</iframe>
+{%- else -%}
+<p class="form-pending"><em>The online {{ f.title }} form is being set up and is not available yet. In the meantime, please email the collaboration at <a href="mailto:LSST-agn@lists.lsst.org">LSST-agn@lists.lsst.org</a>.</em></p>
+{%- endif -%}

@@ -17,6 +17,7 @@ Markdown file: edit it on GitHub, commit, and the site rebuilds in about a minut
 | Members | `members.md` |
 | Apply | `apply.md` |
 | Contact | `contact.md` |
+| Contact request pages | `project_join_request.md`, `publication_review.md`, `publication_dispute.md`, `general_inquiry.md` |
 | Sidebar "Quick links" | `_includes/sidebar.md` |
 
 Each file starts with a short header between `---` lines (the title), followed by Markdown.
@@ -54,8 +55,10 @@ and link it from `meetings.md` as `[this page](/meeting2026/)`. The address is t
 ## Menu and contact forms
 
 - Menu entries: `_data/navigation.yml`.
-- Contact request types: `_data/forms.yml`. Paste a Google Form link into `url` and the type
-  becomes a link on the Contact page and in the Contact dropdown.
+- Contact request types: each has its own page (`project_join_request.md`, `publication_review.md`,
+  `publication_dispute.md`, `general_inquiry.md`) listed in `_data/forms.yml`. Paste a Google Form
+  link into `url` there and the page embeds the form; until then it shows a notice with the mailing
+  list address.
 
 ## Previewing locally (optional)
 
