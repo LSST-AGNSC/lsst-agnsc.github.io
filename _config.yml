@@ -3,7 +3,6 @@ title: Active Galactic Nuclei Science Collaboration
 short_title: LSST AGN SC
 url: https://lsst-agnsc.github.io
 baseurl: ""
-webmaster_email: drupal-site-admin@lsst.org
 
 markdown: kramdown
 kramdown:
