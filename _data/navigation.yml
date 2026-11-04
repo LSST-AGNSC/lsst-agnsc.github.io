@@ -1,5 +1,5 @@
 # Main menu, in order. 'url' is the page address; sub-items appear in a dropdown.
-# The Contact dropdown is filled from _data/forms.yml (only forms with a url are shown).
+# The Contact dropdown lists the request-type pages from _data/forms.yml.
 - title: Home
   url: /
 - title: Meetings

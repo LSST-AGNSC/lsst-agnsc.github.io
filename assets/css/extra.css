@@ -13,3 +13,7 @@
 
 /* Member list and meeting programs keep one entry per line */
 #content-wrap p { word-wrap: break-word; }
+
+/* Contact request forms */
+.form-pending { color: #666; }
+.form-embed { border: 1px solid #ddd; background: #fff; }
