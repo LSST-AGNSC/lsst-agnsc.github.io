@@ -1,0 +1,15 @@
+/* Additions for the static site. Loaded after site.css. */
+
+/* Mobile menu: on narrow screens the theme hides the menu list and the old site showed a <select> instead. */
+.tinynav { display: none; }
+@media screen and (max-width: 767px) {
+  .tinynav { display: block; width: 90%; margin: 0 auto; padding: 0.4em; font-size: 14px; }
+}
+
+/* Documents / Talks lists */
+.views-row { margin-bottom: 1.5em; }
+.file-icon { vertical-align: middle; }
+.file-pending { color: #888; }
+
+/* Member list and meeting programs keep one entry per line */
+#content-wrap p { word-wrap: break-word; }

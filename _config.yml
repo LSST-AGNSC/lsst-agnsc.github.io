@@ -1,0 +1,25 @@
+# Site settings. Built automatically by GitHub Pages; see README.md for how to edit pages.
+title: Active Galactic Nuclei Science Collaboration
+short_title: LSST AGN SC
+url: https://lsst-agnsc.github.io
+baseurl: ""
+webmaster_email: drupal-site-admin@lsst.org
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: true        # a line break inside a paragraph becomes a line break on the page (as in the old editor)
+  auto_ids: false
+
+permalink: pretty        # meetings.md -> /meetings/
+collections:
+  legacy_files:          # one stub per old upload: /sites/default/files/<name>/ redirects to its Google Drive link
+    output: true
+
+defaults:
+  - scope: { path: "" }
+    values: { layout: default }
+  - scope: { path: "", type: legacy_files }
+    values: { layout: redirect }
+
+exclude: [README.md, CONVERSION_PLAN.md, Gemfile, Gemfile.lock, vendor, node_modules, "*.sh"]

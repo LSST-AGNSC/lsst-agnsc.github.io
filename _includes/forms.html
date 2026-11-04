@@ -1,0 +1,5 @@
+<ul>
+{%- for f in site.data.forms %}
+  <li>{% if f.url and f.url != "" %}<a href="{{ f.url }}" target="_blank" rel="noopener">{{ f.title }}</a>{% else %}{{ f.title }} <em>(form coming soon)</em>{% endif %} – {{ f.description }}</li>
+{%- endfor %}
+</ul>

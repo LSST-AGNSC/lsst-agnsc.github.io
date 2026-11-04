@@ -1,0 +1,14 @@
+# Contact request types. Paste the Google Form link into 'url' to turn a type into a live link;
+# while 'url' is empty the Contact page shows the type as plain text with "(form coming soon)".
+- title: Project Join Request
+  description: To request to join an ongoing project.
+  url: ""
+- title: Publication Review
+  description: To request a collaboration review of a publication.
+  url: ""
+- title: Publication Dispute
+  description: To submit a dispute or clarification regarding authorship or publication matters.
+  url: ""
+- title: General Inquiry
+  description: For any other questions or information requests.
+  url: ""

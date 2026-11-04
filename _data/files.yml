@@ -1,0 +1,64 @@
+# One line per file: the exact file name as used in the page links, and its Google Drive link.
+# Leave the value empty ("") until the file is in Drive; the site then shows the name without a link.
+# Get a Drive link with right-click > Share > Copy link (the folder must be shared as 'Anyone with the link').
+
+# Documents
+"AGN_SC_Charter_Supplement_Apr2024_0.pdf": ""
+"AGN_SC_Charter_Apr2024.pdf": ""
+"2023-01-17_scWelcome_1.pdf": ""
+"LSST_AGN_SC_Roadmap_260722.pdf": ""
+"AGN_SC_Publication_Policy_May2020.pdf": ""
+"AGN_SC_Code_of_Conduct_May2020.pdf": ""
+"LSST_AGN_SC_Roadmap_v1p0.pdf": ""
+
+# Talks
+"2019-06-Brandt-Lyon-LSST-01.pdf": ""
+"Brandt-Santiago-LSST-02.pdf": ""
+"Brandt-Cambridge-LSST-Fusion-01.pdf": ""
+"Photoz2_Peters.pdf": ""
+"richards-2017-02.pdf": ""
+"Brandt-LSST-Brazil-01.pdf": ""
+"Brandt-Athena-Madrid-01.pdf": ""
+"Brandt-Lorentz.pdf": ""
+"2014-10-agn_roadmap.pptx": ""
+"2013-09-11-lsstcam13-shemmer.pdf": ""
+
+# Meeting materials (linked from the Meetings page)
+"010-schindler-LSST2018.pdf": ""
+"020-reed-LSST2018.pdf": ""
+"030-anguita-LSST2018.pdf": ""
+"040-bauer-LSST2018.potx": ""
+"2020-06-lsst-agn-sc-mim-plan01.txt": ""
+"Abstract_Assef.txt": ""
+"Abstract_Jiang.txt": ""
+"Abstract_Kasliwal.txt": ""
+"Abstract_MacLeod.txt": ""
+"Abstract_Mundell.txt": ""
+"Abstract_Peters.txt": ""
+"Abstract_Richards.txt": ""
+"Abstract_Sanchez.txt": ""
+"IMG_2086.JPG": ""
+"LSST2018-AGN-session-audio.m4a": ""
+"LSST2018-AGN-session-photo.jpeg": ""
+"LSST_AGN_SC_2017_Assef_0.pdf": ""
+"LSST_AGN_SC_2017_Jiang.pdf": ""
+"LSST_AGN_SC_2017_Kasliwal.pdf": ""
+"LSST_AGN_SC_2017_MacLeod.pdf": ""
+"LSST_AGN_SC_2017_Mundell.pdf": ""
+"LSST_AGN_SC_2017_Peters.pdf": ""
+"LSST_AGN_SC_2017_Richards_edited.pdf": ""
+"LSST_AGN_SC_2017_Sanchez.pdf": ""
+
+# Not linked from any page (historical)
+"2023-01-17_scWelcome.pdf": ""
+"AGN SC OpenProject User's Guide.pdf": ""
+"AGN_SC_Charter_June2020_0.pdf": ""
+"AGN_SC_Charter_May2020.pdf": ""
+"AGN_SC_Charter_May2020_0.pdf": ""
+"AGN_SC_Charter_Supplement_August2021.pdf": ""
+"AGN_SC_Charter_Supplement_May2020.pdf": ""
+"LSST_AGN_SC_Publication_Policy_202501_v3.pdf": ""
+"adFSD.jpg": ""
+"lsst-agn-sc-membership-proposal01.txt": ""
+"pop.jpg": ""
+
