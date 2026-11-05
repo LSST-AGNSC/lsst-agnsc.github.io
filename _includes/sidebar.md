@@ -1,4 +1,5 @@
 <!-- Sidebar block shown on every page. Plain Markdown. -->
+- [2026 meeting (Heraklion)](https://sites.google.com/view/agn-sc-meeting-2026/home)
 - [2025 meeting (Durham)](/meeting2025/)
 - [Collaboration Charter](/sites/default/files/AGN_SC_Charter_Apr2024.pdf/)
 - [Collaboration Roadmap](/sites/default/files/LSST_AGN_SC_Roadmap_260722.pdf/)
