@@ -1,0 +1,6 @@
+# The only links you need to paste: the two shared Google Drive folders.
+# Share each folder as "Anyone with the link" (Viewer), then paste its link here.
+# Every file name on the site then links to its folder, and the "Update Drive links" GitHub Action
+# (Actions tab > Update Drive links > Run workflow) fills _data/files.yml with direct per-file links.
+documents: "https://drive.google.com/drive/folders/1c0-y154EXjx9rJ-7PQDPa_V343YfdFD4?usp=sharing"
+talks: "https://drive.google.com/drive/folders/1NBRd7coLQr3-A1EvxzBxlDohfOe8Tc2L?usp=sharing"

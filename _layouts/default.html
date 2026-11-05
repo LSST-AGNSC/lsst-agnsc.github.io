@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{% if page.url == "/" %}{{ site.title }}{% else %}{{ page.title }}{% endif %} | {{ site.title }}</title>
-  <link rel="icon" type="image/png" href="{{ '/assets/images/lsst_agn_logo_tiny_0.png' | relative_url }}" />
+  <link rel="shortcut icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/vnd.microsoft.icon" />
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" media="all" />
   <link rel="stylesheet" href="{{ '/assets/css/extra.css' | relative_url }}" media="all" />
   <script>
@@ -12,7 +12,7 @@
   (function () {
     var m = /[?&]q=([^&#]+)/.exec(location.search); if (!m) return;
     var q = decodeURIComponent(m[1]).replace(/^\/+|\/+$/g, '');
-    var nodes = {'node/1': '', 'home': '', 'node/4': 'members', 'node/6': 'contact', 'node/39': 'apply', 'node/55': 'meeting2025',
+    var nodes = {'node/1': '', 'home': '', 'node/4': 'members', 'node/6': 'contact', 'node/39': 'apply', 'node/55': 'meeting2025', 'node/52': 'projects', 'node/53': 'publication_dispute', 'node/54': 'general_inquiry', 'node/56': 'project_join_request', 'node/57': 'publication_review', 'node/58': 'documents', 'node/2': 'projects', 'node/5': 'apply', 'apply_old': 'apply',
       'node/37': 'documents', 'node/41': 'documents', 'node/42': 'documents', 'node/43': 'documents', 'node/44': 'documents', 'node/45': 'documents', 'node/51': 'documents',
       'node/7': 'talks', 'node/8': 'talks', 'node/9': 'talks', 'node/10': 'talks', 'node/22': 'talks', 'node/33': 'talks', 'node/34': 'talks', 'node/35': 'talks', 'node/36': 'talks', 'node/40': 'talks',
       'user': ''};
@@ -39,7 +39,7 @@
         <ul class="menu">
         {%- for item in site.data.navigation -%}
           {%- assign children = empty -%}
-          {%- if item.children == "forms" -%}{%- assign children = site.data.forms -%}{%- elsif item.children -%}{%- assign children = item.children -%}{%- endif -%}
+          {%- if item.children == "forms" -%}{%- assign children = site.data.forms | where: "contact", true -%}{%- elsif item.children -%}{%- assign children = item.children -%}{%- endif -%}
           <li class="{% if forloop.first %}first {% endif %}{% if forloop.last %}last {% endif %}{% if children.size > 0 %}expanded{% else %}leaf{% endif %}"><a href="{{ item.url | relative_url }}"{% if item.url == page.url %} class="active"{% endif %}>{{ item.title }}</a>
           {%- if children.size > 0 %}<ul class="menu">{% for c in children %}{%- assign curl = c.url -%}{%- if c.key -%}{%- assign curl = '/' | append: c.key | append: '/' | relative_url -%}{%- endif -%}<li class="leaf"><a href="{{ curl }}"{% if curl == page.url %} class="active"{% endif %}>{{ c.title }}</a></li>{% endfor %}</ul>{% endif -%}
           </li>

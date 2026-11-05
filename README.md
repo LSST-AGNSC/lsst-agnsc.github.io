@@ -11,11 +11,11 @@ Markdown file: edit it on GitHub, commit, and the site rebuilds in about a minut
 | Home | `index.md` |
 | Meetings | `meetings.md` |
 | 2025 meeting | `meeting2025.md` |
-| Projects | `projects.md` |
+| Projects (Project Proposal form) | `projects.md` |
 | Documents | `documents.md` (list in the front matter, see below) |
 | Talks | `talks.md` (same) |
 | Members | `members.md` |
-| Apply | `apply.md` |
+| Apply (Membership Application form) | `apply.md` |
 | Contact | `contact.md` |
 | Contact request pages | `project_join_request.md`, `publication_review.md`, `publication_dispute.md`, `general_inquiry.md` |
 | Sidebar "Quick links" | `_includes/sidebar.md` |
@@ -24,11 +24,20 @@ Each file starts with a short header between `---` lines (the title), followed b
 A line break inside a paragraph is shown as a line break, so lists of names or programme
 lines can be written one per line. Raw HTML is allowed if Markdown is not enough.
 
+## Google Drive
+
+The files live in two shared Drive folders, `documents` and `talks`. The only links to paste are
+the two folder links, in `_data/drive.yml` (share each folder as "Anyone with the link"). Every
+file name on the site then links to its folder. Direct per-file links are filled into
+`_data/files.yml` automatically by the "Update Drive links" GitHub Action (Actions tab > Update
+Drive links > Run workflow; it also runs weekly and whenever `drive.yml` changes). Locally the
+same can be done with `python3 tools/drive_links.py`.
+
 ## Adding a document or talk
 
-1. Upload the file to the collaboration's Google Drive folder and copy its share link
-   (right-click > Share > Copy link; the folder is shared as "Anyone with the link").
-2. In `_data/files.yml` add a line `"<file name>": "<Drive link>"`.
+1. Upload the file to the `documents` or `talks` Drive folder.
+2. In `_data/files.yml` add a line `"<file name>": ""` under the matching folder section
+   (the Action fills in the link).
 3. In `documents.md` or `talks.md` add an item under `items:`:
 
    ```yaml
@@ -36,9 +45,9 @@ lines can be written one per line. Raw HTML is allowed if Markdown is not enough
      file: <file name>
    ```
 
-Old links of the form `/sites/default/files/<file name>` keep working: each file name in
-`_data/files.yml` gets a small page at that address that forwards to the Drive link
-(`_legacy_files/`). For a brand-new file that step is optional.
+Old links of the form `/sites/default/files/<file name>` keep working: each file in
+`_legacy_files/` is a small page at that address that forwards to the file's Drive link, or to
+its folder until the link is known. For a brand-new file that step is optional.
 
 ## Adding a meeting page
 
@@ -55,10 +64,12 @@ and link it from `meetings.md` as `[this page](/meeting2026/)`. The address is t
 ## Menu and contact forms
 
 - Menu entries: `_data/navigation.yml`.
-- Contact request types: each has its own page (`project_join_request.md`, `publication_review.md`,
-  `publication_dispute.md`, `general_inquiry.md`) listed in `_data/forms.yml`. Paste a Google Form
-  link into `url` there and the page embeds the form; until then it shows a notice with the mailing
-  list address.
+- Online forms: six pages carry a form (`apply.md`, `projects.md`, `project_join_request.md`,
+  `publication_review.md`, `publication_dispute.md`, `general_inquiry.md`), listed in
+  `_data/forms.yml`. Paste a Google Form link into `url` there and the page embeds the form; until
+  then it shows a notice. Each page ends with "What the form asks", the field list of the original
+  web form, to mirror when building the Google Form. Entries with `contact: true` appear in the
+  Contact dropdown.
 
 ## Previewing locally (optional)
 
@@ -75,5 +86,7 @@ and open <http://localhost:4000>.
 
 `_layouts/default.html` holds the header, menu, sidebar and footer. `assets/css/site.css` is the
 original theme CSS and should not need editing; put changes in `assets/css/extra.css`.
-`_drive_upload/` (not in git) holds local copies of the old uploads, sorted for Drive.
-`CONVERSION_PLAN.md` describes how the site was converted.
+`_drive_upload/` (not in git) holds local copies of the old uploads in two folders, `documents/` and
+`talks/`, matching the two Google Drive folders.
+`CONVERSION_PLAN.md` describes how the site was converted. The content was taken from the
+original Drupal database dump (November 2026), so it reflects the site's final state.

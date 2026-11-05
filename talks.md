@@ -1,7 +1,7 @@
 ---
 title: Talks
 list_title: Talks
-# Each item: title, exact file name (its Drive link lives in _data/files.yml), optional description and date (YYYY-MM-DD).
+drive_folder: talks   # Drive folder (see _data/drive.yml) used until a file has its own link
 items:
   - title: "Supermassive Black Hole Studies with the LSST - 2019 June"
     file: 2019-06-Brandt-Lyon-LSST-01.pdf

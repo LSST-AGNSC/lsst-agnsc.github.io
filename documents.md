@@ -1,7 +1,15 @@
 ---
 title: Documents
 # Each item: title, exact file name (its Drive link lives in _data/files.yml), optional description and date (YYYY-MM-DD).
+drive_folder: documents   # Drive folder (see _data/drive.yml) used until a file has its own link
 items:
+  - title: "Access instructions for the AGN SC OpenProject database of projects and publications"
+    file: AGN SC OpenProject User's Guide.pdf
+    description: "These are the access instructions for the AGN SC OpenProject database of projects and publications - kindly provided by Roberto Assef and Chris Carroll."
+    date: 2025-11-24
+  - title: "The LSST AGN Science Collaboration Publication Policy (Current)"
+    file: LSST_AGN_SC_Publication_Policy_202501_v3.pdf
+    date: 2025-03-31
   - title: "The LSST AGN Science Collaboration Charter; Supplementary Document (Current)"
     file: AGN_SC_Charter_Supplement_Apr2024_0.pdf
     description: "The LSST AGN Science Collaboration Charter; Supplementary Document (Current)"
@@ -15,17 +23,8 @@ items:
     date: 2023-01-18
   - title: "LSST AGN Science Collaboration Roadmap (Current)"
     file: LSST_AGN_SC_Roadmap_260722.pdf
-    description: "Current version of the LSST AGN SC Roadmap, which can also be found at
-https://www.overleaf.com/project/5f59602d0b81bf000103734f"
+    description: "Current version of the LSST AGN SC Roadmap, which can also be found at https://www.overleaf.com/project/5f59602d0b81bf000103734f"
     date: 2022-07-26
-  - title: "The LSST AGN Science Collaboration Publication Policy (Current)"
-    file: LSST_AGN_SC_Publication_Policy_202501_v3.pdf
-    description: "Rubin LSST AGN Science Collaboration Publication Policy, version 3.0, January 2025."
-    date: 2025-03-23
-  - title: "AGN SC OpenProject User's Guide"
-    file: AGN SC OpenProject User's Guide.pdf
-    description: "How to create an account, request and set up a project, and request paper submission approval in the AGN SC OpenProject system."
-    date: 2020-06-18
   - title: "The LSST AGN Science Collaboration Code of Conduct (Current)"
     file: AGN_SC_Code_of_Conduct_May2020.pdf
     date: 2020-04-26
@@ -33,6 +32,9 @@ https://www.overleaf.com/project/5f59602d0b81bf000103734f"
     file: LSST_AGN_SC_Roadmap_v1p0.pdf
     description: "First complete draft of the LSST AGN Science Collaboration Roadmap"
     date: 2018-02-04
+# Older versions, shown under a 'Previous versions' heading below the main list.
+previous_title: Previous versions
+previous_items:
   - title: "The LSST AGN Science Collaboration Publication Policy (May 2020, superseded)"
     file: AGN_SC_Publication_Policy_May2020.pdf
     description: "Version 2.0 adopted August 2019, revised May 2020. Replaced by version 3.0 (January 2025)."

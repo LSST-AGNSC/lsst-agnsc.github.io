@@ -1,18 +1,33 @@
-# Contact request types. Each has its own page (see the .md file named after the key).
+# Online forms (the old Drupal webforms). Each has its own page; 'contact: true' lists it under the Contact tab.
 # Paste the Google Form link into 'url' and that page embeds the form; until then it shows a notice.
+# The old form's fields are described on each page, to help build the Google Form.
+- key: membership_application
+  title: Membership Application
+  description: Apply for membership in the LSST AGN Science Collaboration.
+  contact: false
+  url: ""
+- key: project_proposal
+  title: Project Proposal
+  description: Propose a new AGN SC project.
+  contact: false
+  url: ""
 - key: project_join_request
   title: Project Join Request
   description: To request to join an ongoing project.
+  contact: true
   url: ""
 - key: publication_review
   title: Publication Review
-  description: To request review of a paper before journal submission, as required by the Publication Policy.
+  description: To initiate the internal publication review process before journal submission.
+  contact: true
   url: ""
 - key: publication_dispute
   title: Publication Dispute
   description: To submit a dispute or clarification regarding authorship or publication matters.
+  contact: true
   url: ""
 - key: general_inquiry
   title: General Inquiry
   description: For any other questions or information requests.
+  contact: true
   url: ""

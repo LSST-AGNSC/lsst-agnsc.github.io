@@ -21,4 +21,4 @@ defaults:
   - scope: { path: "", type: legacy_files }
     values: { layout: redirect }
 
-exclude: [README.md, CONVERSION_PLAN.md, Gemfile, Gemfile.lock, vendor, node_modules, "*.sh"]
+exclude: [README.md, CONVERSION_PLAN.md, Gemfile, Gemfile.lock, vendor, node_modules, tools, "*.sh"]
