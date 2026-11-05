@@ -77,6 +77,7 @@ and open <http://localhost:4000>.
 
 `_layouts/default.html` holds the header, menu, sidebar and footer. `assets/css/site.css` is the
 original theme CSS and should not need editing; put changes in `assets/css/extra.css`.
-`_drive_upload/` (not in git) holds local copies of the old uploads, sorted for Drive.
+`_drive_upload/` (not in git) holds local copies of the old uploads in two folders, `documents/` and
+`talks/`, matching the two Google Drive folders.
 `CONVERSION_PLAN.md` describes how the site was converted. The content was taken from the
 original Drupal database dump (November 2026), so it reflects the site's final state.

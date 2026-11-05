@@ -5,23 +5,35 @@ title: Meetings
 
 See[ this page](https://sites.google.com/view/agn-sc-meeting-2026/home) for full details and to register.
 
-------------------------------------------------------------------------
+<div class="spacer"></div>
 
 ## The 2025 July meeting of the LSST AGN Science Collaboration was hosted in Durham, UK, from Monday 14th to Thursday 17th July.
 
 Details of the 2025 meeting are in[ this link](/meeting2025/).
 
+<div class="spacer"></div>
+
 ## The 2024 July meeting of the LSST AGN Science Collaboration was hosted by the Planetario di Torino “Attilio Ferrari” in Turin, Italy.
 
-## Details of the 2024 meeting are in [this link](https://indico.ict.inaf.it/event/2784/overview).
+Details of the 2024 meeting are in [this link](https://indico.ict.inaf.it/event/2784/overview).
+{: .small}
+
+<div class="spacer"></div>
 
 ## The 2023 July meeting of the LSST AGN Science Collaboration was hosted by the National Radio Astronomy Observatory in Charlottesville, Virginia, USA. 
 
-## Details of the 2023 meeting are in [this link](https://sites.google.com/view/lsstagnscmeeting/home).
+Details of the 2023 meeting are in [this link](https://sites.google.com/view/lsstagnscmeeting/home).
+{: .small}
+
+<div class="spacer"></div>
 
 ------------------------------------------------------------------------
 
+<div class="spacer"></div>
+
 ## The 2022 July meeting of the LSST AGN Science Collaboration was held online, with the program as described below:
+
+<div class="spacer"></div>
 
 #### <u>Supermassive Black Hole Studies with the Legacy Survey of Space and Time - 2022: Getting Ready for Rubin Operations</u>
 
@@ -107,13 +119,19 @@ Daily Moderator - M.J. Temple
            (Status Review; Priority setting)
         \* Other issues arising from this day's talks        
 
+<div class="spacer"></div>
+
 ------------------------------------------------------------------------
+
+<div class="spacer"></div>
 
 ## **Supermassive Black Hole Studies with the Legacy Survey of Space and Time (LSST)**
 
 ##        A Meeting-in-a-Meeting (MiM) as part of the 236th Meeting of the AAS
 
 ## June 1-3, 2020
+
+<div class="spacer"></div>
 
 The Legacy Survey of Space and Time (LSST), to be conducted at the Vera Rubin Observatory beginning in 2023, will enable studies of the growing supermassive black holes (SMBHs) in active galactic nuclei (AGNs) on a truly massive scale. The tens of millions of AGNs discovered will be used for powerful studies of, e.g., the AGN luminosity function, AGN growth across varied cosmic environments, the highest redshift AGNs, AGN variability of many types, and transient SMBH fueling events. The LSST AGN Science Collaboration, currently composed of about 50 members spanning the globe, will lead many investigations of AGNs with LSST and supporting multiwavelength data. The time to prepare for AGN science with the petabyte deluge of LSST data is now, and this Meeting-in-a-Meeting (MiM) aims to stimulate such preparation.
 
@@ -136,12 +154,16 @@ Video recordings of the six MiM sessions are available on YouTube...
 
 Slides for all the talks can be downloaded at https://www.dropbox.com/s/pzgmumkodg45tfb/2020-06-LSST-MiM-slides01.tar.gz?dl=0
 
+<div class="spacer"></div>
+
 ------------------------------------------------------------------------
 
 ## **LSST AGN Science Collaboration Session at the LSST 2018 Project and Community Workshop**
 
 **Thursday, August 16, 2018, 11:00 AM - 12:30 PM; Joshua Tree Room (El Conquistador Hilton Resort)**
 LSST will enable studies of the growing supermassive black holes (SMBHs) in active galactic nuclei (AGNs) on a truly massive scale - LSST plus multiwavelength data should allow the selection of tens of millions of AGNs. LSST will also provide unmatched source statistics on transient SMBH phenomena including stellar tidal disruptions, strong gravitational microlensing events, blazar flares, changing-look sources, and accretion-disk instabilities. This session covered some of these science prospects and promoted planning for them with connections to the AGN Science Collaboration, the Galaxies Science Collaboration, the Transients Science Collaboration, Informatics and Statistics, and the Project. The session organizers were W.N. Brandt (Chair), Franz Bauer, Gordon Richards, and Michael Strauss.
+
+<div class="spacer"></div>
 
 ### Meeting Program
 
@@ -164,7 +186,11 @@ Franz Bauer, Pontificia Universidad Catolica de Chile
 
 [Photo of Session Attendees](/sites/default/files/LSST2018-AGN-session-photo.jpeg)
 
+<div class="spacer"></div>
+
 ------------------------------------------------------------------------
+
+<div class="spacer"></div>
 
 ## **LSST AGN Science Collaboration Roadmap Development Meeting**
 
@@ -184,6 +210,8 @@ Gordon Richards (Drexel University); <gtr@physics.drexel.edu>
 Organizing committee members may be contacted with any questions.
 
 ### Meeting Program
+
+<div class="spacer"></div>
 
 #### Session 1: 9:00 - 10:30
 
@@ -245,4 +273,6 @@ Writing Roadmap White Paper Skeleton
 
 This meeting is kindly supported by the LSST Corporation
 
-------------------------------------------------------------------------
+<div class="spacer"></div>
+
+<div class="spacer"></div>

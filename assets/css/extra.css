@@ -17,3 +17,9 @@
 /* Contact request forms */
 .form-pending { color: #666; }
 .form-embed { border: 1px solid #ddd; background: #fff; }
+
+/* Meetings page: the old editor marked some lines as small text inside headings, and used empty
+   headings/paragraphs and invisible rules as vertical spacing. */
+#content-wrap p.small { font-size: 13px; margin: 11px 0; }
+#content-wrap .spacer { height: 3.5em; }
+#content-wrap img[src$="PDF_file_icon.svg"] { width: 15px; height: 16px; }
