@@ -1,11 +1,15 @@
 ---
 title: Meetings
 ---
-## The 2025 July meeting of the LSST AGN Science Collaboration will be hosted in Durham, UK, from Monday 14th to Thursday 17th July.
+## The 2026 meeting of the LSST AGN Science Collaboration will be hosted in Heraklion, Greece, from Monday 24th to Thursday 28th May.
 
-See[ this page](/meeting2025/) for full details.
+See[ this page](https://sites.google.com/view/agn-sc-meeting-2026/home) for full details and to register.
 
 ------------------------------------------------------------------------
+
+## The 2025 July meeting of the LSST AGN Science Collaboration was hosted in Durham, UK, from Monday 14th to Thursday 17th July.
+
+Details of the 2025 meeting are in[ this link](/meeting2025/).
 
 ## The 2024 July meeting of the LSST AGN Science Collaboration was hosted by the Planetario di Torino “Attilio Ferrari” in Turin, Italy.
 
@@ -23,85 +27,85 @@ See[ this page](/meeting2025/) for full details.
 
 #### The 2022 Summer Meeting of the LSST Active Galactic Nuclei Science Collaboration: July 26-28, 2022
 
-Note that all times are for USA Eastern time (e.g., for New York City).
+Note that all times are for USA Eastern time (e.g., for New York City). 
 
 **TUE, JULY 26 - TOTAL TIME IS 4.2 HOURS**
 
 Daily Moderator - G.T. Richards
 
 10:30am - 11:55pm
-10 - Welcome and Organization
-25 - Clarkson - "The Status of the LSST Science Collaborations and Insights for the AGN SC"
-25 - Brandt - "The 2022 State of the LSST AGN Science Collaboration"
-25 - Shemmer - "The LSST AGN Science Collaboration Roadmap"
+ 10 - Welcome and Organization
+ 25 - Clarkson - "The Status of the LSST Science Collaborations and Insights for the AGN SC"
+ 25 - Brandt - "The 2022 State of the LSST AGN Science Collaboration"
+ 25 - Shemmer - "The LSST AGN Science Collaboration Roadmap"
 
 10 - BREAK
 
 12:05pm - 1:20pm
-25 - AlSayyad - "Update on Science Pipelines and Data Products for the AGN SC"
-25 - Petrecca - "The LSST Data Previews - Current Status Relevant to the AGN SC and Brief Tutorial of the Rubin Science Platform"
-25 - Homayouni - "Census of Black Hole Accretion Structure and Mass with Rubin/LSST"
+ 25 - AlSayyad - "Update on Science Pipelines and Data Products for the AGN SC"
+ 25 - Petrecca - "The LSST Data Previews - Current Status Relevant to the AGN SC and Brief Tutorial of the Rubin Science Platform"
+ 25 - Homayouni - "Census of Black Hole Accretion Structure and Mass with Rubin/LSST"
 
-10 - BREAK
+10 - BREAK 
 
 1:30pm - 2:40pm
-25 - Secunda - "Probing Accretion Disk Structure with LSST"
+ 25 - Secunda - "Probing Accretion Disk Structure with LSST"      
 
-45+ - DISCUSSIONS
-\* SCOC discussion led by Bauer et al.
-\* Other issues arising from this day's talks
+ 45+ - DISCUSSIONS
+        \* SCOC discussion led by Bauer et al.      
+        \* Other issues arising from this day's talks        
 
 **WED, JULY 27 - TOTAL TIME IS 4.4 HOURS**
 
 Daily Moderator - D. De Cicco
 
 10:30am - 11:45am
-25 - Verma - "The In-kind process and updates for the AGN SC"
-25 - Czerny - "Emission line time delays from LSST AGN photometry" (In-Kind Contribution)
-25 - Salvato - "MPE photometric redshifts for LSST detected AGN" (In-Kind Contribution)
+ 25 - Verma - "The In-kind process and updates for the AGN SC"
+ 25 - Czerny - "Emission line time delays from LSST AGN photometry" (In-Kind Contribution)
+ 25 - Salvato - "MPE photometric redshifts for LSST detected AGN" (In-Kind Contribution)
 
 10 - BREAK
 
 11:55pm - 1:10pm
-25 - Kovacevic - "SER-SAG directable software in-kind contribution to LSST: Report on the construction of a time domain pipeline for periodicity search" (In-Kind Contribution)
-25 - Bongiorno - "Italian simulations of high-z AGN and galaxies in the LSST survey" (In-Kind Contribution)
-25 - Zou - "Multi-wavelength data and spectral energy distributions in the LSST Deep-Drilling Fields"
+ 25 - Kovacevic - "SER-SAG directable software in-kind contribution to LSST: Report on the construction of a time domain pipeline for periodicity search" (In-Kind Contribution)
+ 25 - Bongiorno - "Italian simulations of high-z AGN and galaxies in the LSST survey" (In-Kind Contribution)
+ 25 - Zou - "Multi-wavelength data and spectral energy distributions in the LSST Deep-Drilling Fields"
 
 10 - BREAK
 
 1:20pm - 2:55pm
-25 - Shirley - "Joint photometry from Vera C. Rubin Observatory optical and VISTA near infrared imaging"
-25 - Lacy - "The host galaxies of low redshift quasars identified in the VLA Sky Survey"
+ 25 - Shirley - "Joint photometry from Vera C. Rubin Observatory optical and VISTA near infrared imaging"      
+ 25 - Lacy - "The host galaxies of low redshift quasars identified in the VLA Sky Survey"
 
-45+ - DISCUSSIONS
-\* In-kind issues discussion led by Hoenig et al.
-(System readiness; Communication channels; Software access)
-\* Other issues arising from this day's talks
+ 45+ - DISCUSSIONS
+        \* In-kind issues discussion led by Hoenig et al.
+           (System readiness; Communication channels; Software access)
+        \* Other issues arising from this day's talks        
 
 **THU, JULY 28 - TOTAL TIME IS 4.0 HOURS**
 
 Daily Moderator - M.J. Temple
 
-10:30am - 11:45am
-25 - Yu - "Building A Comprehensive Dataset in Preparation for LSST AGN Science: AGN Data Challenge and the Next"
-25 - Savic - "The LSST AGN Data Challenge: Selection methods"
-25 - D'Ammando - "Synergies between LSST and CTA for the study of the physics of relativistic jets"
+10:30am - 11:45am 
+ 25 - Yu - "Building A Comprehensive Dataset in Preparation for LSST AGN Science: AGN Data Challenge and the Next"
+ 25 - Savic - "The LSST AGN Data Challenge: Selection methods"
+ 25 - D'Ammando - "Synergies between LSST and CTA for the study of the physics of relativistic jets"
 
 10 - BREAK
 
 11:55pm - 1:10pm
-25 - Charisi - "Multi-messenger observations of supermassive black hole binaries with LSST"
-25 - Hernandez-Garcia - "Updates on services provided by the ALeRCE Broker for AGN science"
-25 - Patel - "Studying the Variability of Quasars as a function of rest-frame wavelength"
+ 25 - Charisi - "Multi-messenger observations of supermassive black hole binaries with LSST"
+ 25 - Hernandez-Garcia - "Updates on services provided by the ALeRCE Broker for AGN science"
+ 25 - Patel - "Studying the Variability of Quasars as a function of rest-frame wavelength"
 
 10 - BREAK
 
 1:20pm - 2:30pm
 
-45+ - DISCUSSIONS
-\* Roadmapping issues discussion led by Shemmer et al.
-(Status Review; Priority setting)
-\* Other issues arising from this day's talks
+ 45+ - DISCUSSIONS
+        \* Roadmapping issues discussion led by Shemmer et al.
+           (Status Review; Priority setting)
+        \* Other issues arising from this day's talks        
 
 ------------------------------------------------------------------------
 
@@ -119,18 +123,18 @@ The MiM program will include 16 talks, each of 30 min duration including time fo
 
 [The MiM schedule is available.](/sites/default/files/2020-06-lsst-agn-sc-mim-plan01.txt)
 
-For questions or additional information, please email W. Niel Brandt (<wnbrandt@gmail.com>).
+For questions or additional information, please email W. Niel Brandt (wnbrandt@gmail.com).
 
 Video recordings of the six MiM sessions are available on YouTube...
 
-   Session 1: <https://www.youtube.com/watch?v=vbROQY_88L0>
-   Session 2: <https://www.youtube.com/watch?v=TvSNrO-voa4>
-   Session 3: <https://www.youtube.com/watch?v=qjq0S23Pp6A>
-   Session 4: <https://www.youtube.com/watch?v=3ZFhdX2j2es>
-   Session 5: <https://www.youtube.com/watch?v=mhCdleBWEus>
-   Session 6: <https://www.youtube.com/watch?v=z9wb9bWLfWo>
+   Session 1: https://www.youtube.com/watch?v=vbROQY_88L0
+   Session 2: https://www.youtube.com/watch?v=TvSNrO-voa4
+   Session 3: https://www.youtube.com/watch?v=qjq0S23Pp6A
+   Session 4: https://www.youtube.com/watch?v=3ZFhdX2j2es
+   Session 5: https://www.youtube.com/watch?v=mhCdleBWEus
+   Session 6: https://www.youtube.com/watch?v=z9wb9bWLfWo
 
-Slides for all the talks can be downloaded at [https://www.dropbox.com/s/pzgmumkodg45tfb/2020-06-LSST-MiM-slides01.tar....](https://www.dropbox.com/s/pzgmumkodg45tfb/2020-06-LSST-MiM-slides01.tar.gz?dl=0)
+Slides for all the talks can be downloaded at https://www.dropbox.com/s/pzgmumkodg45tfb/2020-06-LSST-MiM-slides01.tar.gz?dl=0
 
 ------------------------------------------------------------------------
 

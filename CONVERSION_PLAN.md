@@ -10,7 +10,14 @@ Written 2026-11-04, revised the same day after two decisions from Weixiang:
 Goal unchanged: keep the exact look and layout of agn.science.lsst.org, keep
 every static page, drop everything that needed PHP.
 
-## Status (2026-11-04)
+## Status (2026-11-04, evening)
+
+The original Drupal code and database (`drupalscienceagn.sql`, dumped 2026-11-04) became
+available later in the day and are now the source of truth: all page bodies, the Documents and
+Talks lists (from the `document` nodes and their list/talk flags), the six webforms' intro text
+and field lists, the menu, and the theme's own favicon come from it. The Wayback material
+below was only the first pass.
+
 
 Built on branch `static-site`, verified locally with Jekyll 3.10 (the version GitHub Pages runs).
 Done: all nine pages as Markdown, Documents/Talks lists with description and date (Documents also lists the newer files from the server dump: 2025 publication policy v3, OpenProject guide, earlier charter revisions), Members

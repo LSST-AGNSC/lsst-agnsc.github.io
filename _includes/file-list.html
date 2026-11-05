@@ -4,34 +4,16 @@
               <div class="content">
                 <div class="view view-documents">
                   <div class="view-content">
-                  {%- for item in page.items %}
-                    {%- assign url = site.data.files[item.file] -%}
-                    {%- assign ext = item.file | split: "." | last | downcase -%}
-                    {%- case ext -%}
-                      {%- when "pdf" %}{% assign icon = "application-pdf.png" %}{% assign alt = "PDF icon" %}{% assign mime = "application/pdf" -%}
-                      {%- when "pptx" or "potx" or "ppt" %}{% assign icon = "x-office-presentation.png" %}{% assign alt = "File" %}{% assign mime = "application/vnd.openxmlformats-officedocument.presentationml.presentation" -%}
-                      {%- when "doc" or "docx" %}{% assign icon = "x-office-document.png" %}{% assign alt = "File" %}{% assign mime = "application/vnd.openxmlformats-officedocument.wordprocessingml.document" -%}
-                      {%- when "txt" %}{% assign icon = "text-plain.png" %}{% assign alt = "Plain text icon" %}{% assign mime = "text/plain" -%}
-                      {%- when "jpg" or "jpeg" or "png" %}{% assign icon = "image-x-generic.png" %}{% assign alt = "Image icon" %}{% assign mime = "image" -%}
-                      {%- when "m4a" or "mp3" %}{% assign icon = "audio-x-generic.png" %}{% assign alt = "Audio icon" %}{% assign mime = "audio" -%}
-                      {%- else %}{% assign icon = "application-octet-stream.png" %}{% assign alt = "File" %}{% assign mime = "application/octet-stream" -%}
-                    {%- endcase %}
-                    <div class="views-row views-row-{{ forloop.index }} {% cycle 'views-row-odd', 'views-row-even' %}{% if forloop.first %} views-row-first{% endif %}{% if forloop.last %} views-row-last{% endif %}">
-                      <article class="node node-document node-promoted clearfix">
-                        <header><h2 class="title">{% if url and url != "" %}<a href="{{ url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h2></header>
-                        <div class="content">
-                          <div class="field field-name-field-file field-type-file field-label-hidden"><div class="field-items"><div class="field-item even"><span class="file"><img class="file-icon" alt="{{ alt }}" title="{{ mime }}" src="{{ '/assets/images/icons/' | append: icon | relative_url }}" /> {% if url and url != "" %}<a href="{{ url }}" type="{{ mime }}">{{ item.file }}</a>{% else %}{{ item.file }} <em class="file-pending">(being moved to Google Drive)</em>{% endif %}</span></div></div></div>
-                          {%- if item.description %}
-                          <div class="field field-name-field-description field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">{{ item.description }}</div></div></div>
-                          {%- endif %}
-                          {%- if item.date %}
-                          <div class="field field-name-field-date field-type-datetime field-label-hidden"><div class="field-items"><div class="field-item even"><span class="date-display-single">{{ item.date | date: "%A, %B %-d, %Y" }}</span></div></div></div>
-                          {%- endif %}
-                        </div>
-                      </article>
-                    </div>
-                  {%- endfor %}
+                  {% assign list_items = page.items %}{% include file-items.html %}
                   </div>
                 </div>
               </div>
             </div>
+            {%- if page.previous_items %}
+            <div id="block-views-documents-block-previous" class="block block-views">
+              <h2>{{ page.previous_title | default: 'Previous versions' }}</h2>
+              <div class="content"><div class="view view-documents"><div class="view-content">
+              {% assign list_items = page.previous_items %}{% include file-items.html %}
+              </div></div></div>
+            </div>
+            {%- endif %}

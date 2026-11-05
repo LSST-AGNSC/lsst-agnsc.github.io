@@ -1,5 +1,5 @@
 <ul>
-{%- for f in site.data.forms %}
+{%- for f in site.data.forms %}{%- if f.contact %}
   <li><a href="{{ '/' | append: f.key | append: '/' | relative_url }}">{{ f.title }}</a> – {{ f.description }}</li>
-{%- endfor %}
+{%- endif %}{%- endfor %}
 </ul>
