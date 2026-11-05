@@ -22,13 +22,17 @@ def list_folder(fid):
     """Return {file name: direct link} for a public folder."""
     url = f"https://drive.google.com/embeddedfolderview?id={fid}#list"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (lsst-agnsc.github.io link updater)"})
-    page = urllib.request.urlopen(req, timeout=60).read().decode("utf-8", "replace")
+    try:
+        page = urllib.request.urlopen(req, timeout=60).read().decode("utf-8", "replace")
+    except urllib.error.HTTPError as e:
+        if e.code in (401, 403): raise RuntimeError(f"folder {fid} is not shared publicly: set sharing to 'Anyone with the link' (Viewer)")
+        if e.code == 404: raise RuntimeError(f"folder {fid} not found: check the link in _data/drive.yml")
+        raise
     out = {}
     # entries look like: <div class="flip-entry" id="entry-<ID>"> ... <a href="https://drive.google.com/file/d/<ID>/view..."> ... <div class="flip-entry-title">NAME</div>
-    for m in re.finditer(r'<div class="flip-entry" id="entry-([A-Za-z0-9_-]+)">(.*?)</div>\s*</div>\s*</a>', page, re.S):
-        eid, chunk = m.group(1), m.group(2)
-        t = re.search(r'flip-entry-title">(.*?)</div>', chunk, re.S)
-        if t: out[html.unescape(re.sub(r'<[^>]+>', '', t.group(1))).strip()] = f"https://drive.google.com/file/d/{eid}/view"
+    for m in re.finditer(r'<div class="flip-entry" id="entry-([A-Za-z0-9_-]+)"[^>]*>(.*?)flip-entry-title">(.*?)</div>', page, re.S):
+        eid, title = m.group(1), m.group(3)
+        out[html.unescape(re.sub(r'<[^>]+>', '', title)).strip()] = f"https://drive.google.com/file/d/{eid}/view"
     if not out:  # fallback: any file link followed by a title
         for m in re.finditer(r'file/d/([A-Za-z0-9_-]+)/view[^"]*"[^>]*>.*?flip-entry-title">(.*?)</div>', page, re.S):
             out[html.unescape(re.sub(r'<[^>]+>', '', m.group(2))).strip()] = f"https://drive.google.com/file/d/{m.group(1)}/view"
