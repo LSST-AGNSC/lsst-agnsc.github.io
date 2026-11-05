@@ -123,7 +123,7 @@ Ziming Ji (Rochester Inst of Technology)
 Yan-Fei Jiang (UCSB)
 Stephanie Juneau (NSF NOIRLab)
 Sungho Jung (Seoul Nat Univ)
-Eric Kara (MIT)
+Erin Kara (MIT)
 Katherine Kauma (Cambridge IoA)
 Luke Z. Kelley (Berkeley)
 Minjin Kim (Yonsei Univ)
@@ -315,6 +315,9 @@ Bojun Zhang (Penn State)
 Kaiwen Zhang (Univ Wyoming)
 Shifu Zhu (Penn State)
 Abdu Zoghbi (Univ Maryland)
+Mudit Garg (New York Univ)
+Paul Gontard (Stanford Univ)
+Gianni Sims (Florida Atlantic Univ)
 
 **Full Members:**
 
