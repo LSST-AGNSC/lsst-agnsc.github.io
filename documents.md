@@ -1,6 +1,7 @@
 ---
 title: Documents
 # Each item: title, exact file name (its Drive link lives in _data/files.yml), optional description and date (YYYY-MM-DD).
+drive_folder: documents   # Drive folder (see _data/drive.yml) used until a file has its own link
 items:
   - title: "Access instructions for the AGN SC OpenProject database of projects and publications"
     file: AGN SC OpenProject User's Guide.pdf

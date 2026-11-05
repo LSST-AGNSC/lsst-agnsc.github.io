@@ -1,7 +1,7 @@
-# One line per file: the exact file name as used in the page links, and its Google Drive link.
-# Leave the value empty ("") until the file is in Drive; the site then shows the name without a link.
-# Get a Drive link with right-click > Share > Copy link (the folder must be shared as "Anyone with the link").
-# Two sections, mirroring the two Drive folders (and _drive_upload/ locally).
+# Direct Google Drive link for each file, keyed by the exact file name used on the site.
+# Filled in automatically by the "Update Drive links" GitHub Action from the folders in _data/drive.yml
+# (or locally with: python3 tools/drive_links.py). You may also paste a link by hand to override.
+# While a value is empty the file name links to its Drive folder instead.
 
 # Documents folder: files shown on the Documents page
 "2023-01-17_scWelcome_1.pdf": ""

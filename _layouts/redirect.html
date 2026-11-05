@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8" />
   {%- assign url = site.data.files[page.file] -%}
+  {%- assign via_folder = false -%}
+  {%- if url == nil or url == "" -%}{%- assign url = site.data.drive[page.folder] -%}{%- assign via_folder = true -%}{%- endif -%}
   {%- if url and url != "" %}
   <meta http-equiv="refresh" content="0; url={{ url }}" />
   <link rel="canonical" href="{{ url }}" />
@@ -16,7 +18,7 @@
 <div id="wrapper"><div id="main" class="clearfix"><div id="primary"><section id="content" role="main"><div id="content-wrap" style="padding:2em">
   <h1 class="page-title">{{ page.file }}</h1>
   {%- if url and url != "" %}
-  <p>This file has moved to Google Drive. If you are not redirected, <a href="{{ url }}">open it here</a>.</p>
+  <p>This file has moved to Google Drive{% if via_folder %} (folder "{{ page.folder }}"; look for <strong>{{ page.file }}</strong> there){% endif %}. If you are not redirected, <a href="{{ url }}">open it here</a>.</p>
   {%- else %}
   <p>This file is being moved to Google Drive and is not available yet. Please check back later.</p>
   {%- endif %}

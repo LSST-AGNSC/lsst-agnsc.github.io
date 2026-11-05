@@ -1,6 +1,10 @@
 {%- comment -%} One views-row per entry of list_items {%- endcomment -%}
 {%- for item in list_items %}
                     {%- assign url = site.data.files[item.file] -%}
+                    {%- assign folder = item.folder | default: page.drive_folder -%}
+                    {%- assign folder_url = site.data.drive[folder] -%}
+                    {%- assign via_folder = false -%}
+                    {%- if url == nil or url == "" -%}{%- if folder_url and folder_url != "" -%}{%- assign url = folder_url -%}{%- assign via_folder = true -%}{%- endif -%}{%- endif -%}
                     {%- assign ext = item.file | split: "." | last | downcase -%}
                     {%- case ext -%}
                       {%- when "pdf" %}{% assign icon = "application-pdf.png" %}{% assign alt = "PDF icon" %}{% assign mime = "application/pdf" -%}
@@ -13,9 +17,9 @@
                     {%- endcase %}
                     <div class="views-row views-row-{{ forloop.index }} {% cycle 'views-row-odd', 'views-row-even' %}{% if forloop.first %} views-row-first{% endif %}{% if forloop.last %} views-row-last{% endif %}">
                       <article class="node node-document node-promoted clearfix">
-                        <header><h2 class="title">{% if url and url != "" %}<a href="{{ url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h2></header>
+                        <header><h2 class="title">{% if url and url != "" %}<a href="{{ url }}"{% if via_folder %} target="_blank" rel="noopener"{% endif %}>{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}</h2></header>
                         <div class="content">
-                          <div class="field field-name-field-file field-type-file field-label-hidden"><div class="field-items"><div class="field-item even"><span class="file"><img class="file-icon" alt="{{ alt }}" title="{{ mime }}" src="{{ '/assets/images/icons/' | append: icon | relative_url }}" /> {% if url and url != "" %}<a href="{{ url }}" type="{{ mime }}">{{ item.file }}</a>{% else %}{{ item.file }} <em class="file-pending">(being moved to Google Drive)</em>{% endif %}</span></div></div></div>
+                          <div class="field field-name-field-file field-type-file field-label-hidden"><div class="field-items"><div class="field-item even"><span class="file"><img class="file-icon" alt="{{ alt }}" title="{{ mime }}" src="{{ '/assets/images/icons/' | append: icon | relative_url }}" /> {% if url and url != "" %}<a href="{{ url }}" type="{{ mime }}"{% if via_folder %} title="Opens the Google Drive folder that contains this file" target="_blank" rel="noopener"{% endif %}>{{ item.file }}</a>{% else %}{{ item.file }} <em class="file-pending">(being moved to Google Drive)</em>{% endif %}</span></div></div></div>
                           {%- if item.description %}
                           <div class="field field-name-field-description field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even">{{ item.description }}</div></div></div>
                           {%- endif %}

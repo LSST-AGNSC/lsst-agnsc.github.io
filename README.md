@@ -24,11 +24,20 @@ Each file starts with a short header between `---` lines (the title), followed b
 A line break inside a paragraph is shown as a line break, so lists of names or programme
 lines can be written one per line. Raw HTML is allowed if Markdown is not enough.
 
+## Google Drive
+
+The files live in two shared Drive folders, `documents` and `talks`. The only links to paste are
+the two folder links, in `_data/drive.yml` (share each folder as "Anyone with the link"). Every
+file name on the site then links to its folder. Direct per-file links are filled into
+`_data/files.yml` automatically by the "Update Drive links" GitHub Action (Actions tab > Update
+Drive links > Run workflow; it also runs weekly and whenever `drive.yml` changes). Locally the
+same can be done with `python3 tools/drive_links.py`.
+
 ## Adding a document or talk
 
-1. Upload the file to the collaboration's Google Drive folder and copy its share link
-   (right-click > Share > Copy link; the folder is shared as "Anyone with the link").
-2. In `_data/files.yml` add a line `"<file name>": "<Drive link>"`.
+1. Upload the file to the `documents` or `talks` Drive folder.
+2. In `_data/files.yml` add a line `"<file name>": ""` under the matching folder section
+   (the Action fills in the link).
 3. In `documents.md` or `talks.md` add an item under `items:`:
 
    ```yaml
@@ -36,9 +45,9 @@ lines can be written one per line. Raw HTML is allowed if Markdown is not enough
      file: <file name>
    ```
 
-Old links of the form `/sites/default/files/<file name>` keep working: each file name in
-`_data/files.yml` gets a small page at that address that forwards to the Drive link
-(`_legacy_files/`). For a brand-new file that step is optional.
+Old links of the form `/sites/default/files/<file name>` keep working: each file in
+`_legacy_files/` is a small page at that address that forwards to the file's Drive link, or to
+its folder until the link is known. For a brand-new file that step is optional.
 
 ## Adding a meeting page
 
