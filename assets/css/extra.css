@@ -28,6 +28,13 @@
    They are plain text now, styled to match: grey uppercase, white on a coloured background on hover. */
 .global-profile ul li a, .global-profile ul li.project a, .global-profile ul li.science a {
   width: auto; padding: 0 12px; margin-left: 4px; text-indent: 0; background: none;
-  color: #999; font-size: 11px; font-weight: bold; text-transform: uppercase; line-height: 35px; text-align: center;
+  color: #777; font-size: 15px; font-weight: bold; text-transform: uppercase; line-height: 35px; text-align: center;
 }
 .global-profile ul li a:hover, .global-profile ul li.project a:hover, .global-profile ul li.science a:hover { color: #fff; }
+
+/* Header: less empty space around the logo and the top-right links. */
+#header #site-logo { margin: 0 1.5%; padding: 1em 0; }
+@media screen and (max-width: 767px) { #header #site-logo { padding: 1em 0; } }
+/* links near the top edge of the header */
+.global-profile { top: 14px; right: 1.5%; }
+.global-profile ul li:last-child a { padding-right: 0; }
