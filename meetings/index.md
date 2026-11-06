@@ -1,7 +1,7 @@
 ---
 title: Meetings
 ---
-## The 2026 meeting of the LSST AGN Science Collaboration will be hosted in Heraklion, Greece, from Monday 24th to Thursday 28th May.
+## The 2026 meeting of the LSST AGN Science Collaboration was hosted in Heraklion, Greece, from Monday 24th to Thursday 28th May.
 
 See[ this page](https://sites.google.com/view/agn-sc-meeting-2026/home) for full details and to register.
 
