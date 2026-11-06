@@ -1,6 +1,5 @@
 ---
-title: Talks
-list_title: Talks
+title: Previous Talks
 drive_folder: talks   # Drive folder (see _data/drive.yml) used until a file has its own link
 items:
   - title: "Supermassive Black Hole Studies with the LSST - 2019 June"

@@ -12,9 +12,9 @@
   (function () {
     var m = /[?&]q=([^&#]+)/.exec(location.search); if (!m) return;
     var q = decodeURIComponent(m[1]).replace(/^\/+|\/+$/g, '');
-    var nodes = {'node/1': '', 'home': '', 'node/4': 'members', 'node/6': 'contact', 'node/39': 'apply', 'node/55': 'meeting2025', 'node/52': 'projects', 'node/53': 'publication_dispute', 'node/54': 'general_inquiry', 'node/56': 'project_join_request', 'node/57': 'publication_review', 'node/58': 'documents', 'node/2': 'projects', 'node/5': 'apply', 'apply_old': 'apply',
+    var nodes = {'node/1': '', 'home': '', 'node/4': 'members', 'node/6': 'contact', 'node/39': 'apply', 'node/55': 'meetings/2025', 'node/52': 'projects', 'node/53': 'publication_dispute', 'node/54': 'general_inquiry', 'node/56': 'project_join_request', 'node/57': 'publication_review', 'node/58': 'documents', 'node/2': 'projects', 'node/5': 'apply', 'apply_old': 'apply', 'meeting2025': 'meetings/2025', 'talks': 'meetings/talks',
       'node/37': 'documents', 'node/41': 'documents', 'node/42': 'documents', 'node/43': 'documents', 'node/44': 'documents', 'node/45': 'documents', 'node/51': 'documents',
-      'node/7': 'talks', 'node/8': 'talks', 'node/9': 'talks', 'node/10': 'talks', 'node/22': 'talks', 'node/33': 'talks', 'node/34': 'talks', 'node/35': 'talks', 'node/36': 'talks', 'node/40': 'talks',
+      'node/7': 'meetings/talks', 'node/8': 'meetings/talks', 'node/9': 'meetings/talks', 'node/10': 'meetings/talks', 'node/22': 'meetings/talks', 'node/33': 'meetings/talks', 'node/34': 'meetings/talks', 'node/35': 'meetings/talks', 'node/36': 'meetings/talks', 'node/40': 'meetings/talks',
       'user': ''};
     if (nodes.hasOwnProperty(q)) q = nodes[q]; else if (!/^[a-z0-9_-]+$/.test(q)) q = '';
     location.replace('{{ site.baseurl }}/' + (q ? q + '/' : ''));
@@ -29,9 +29,8 @@
     </a></div>
     <div class="global-profile">
       <ul>
-        <li class="public"><a target="_blank" title="{{ site.title }} in Public" href="http://www.lsst.org/">{{ site.title }} Public</a></li>
-        <li class="project"><a target="_blank" title="{{ site.title }} in project" href="https://project.lsst.org">{{ site.title }} project</a></li>
-        <li class="science"><a target="_blank" title="{{ site.title }} For Scientists" href="https://www.lsstcorporation.org">{{ site.title }} science</a></li>
+        <li class="project"><a target="_blank" rel="noopener" title="Vera C. Rubin Observatory" href="https://rubinobservatory.org">Vera C. Rubin Observatory</a></li>
+        <li class="science"><a target="_blank" rel="noopener" title="LSST Discovery Alliance" href="https://lsstdiscoveryalliance.org">LSST Discovery Alliance</a></li>
       </ul>
     </div>
     <nav id="navigation" role="navigation">

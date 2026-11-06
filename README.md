@@ -9,11 +9,11 @@ Markdown file: edit it on GitHub, commit, and the site rebuilds in about a minut
 | Page | File |
 |---|---|
 | Home | `index.md` |
-| Meetings | `meetings.md` |
-| 2025 meeting | `meeting2025.md` |
+| Meetings (list of all meetings) | `meetings/index.md` |
+| One meeting (2025, 2022, 2020, 2018, 2017) | `meetings/<year>.md` |
+| Previous Talks (linked from Meetings) | `meetings/talks.md` (list in the front matter, see below) |
 | Projects (Project Proposal form) | `projects.md` |
 | Documents | `documents.md` (list in the front matter, see below) |
-| Talks | `talks.md` (same) |
 | Members | `members.md` |
 | Apply (Membership Application form) | `apply.md` |
 | Contact | `contact.md` |
@@ -38,7 +38,7 @@ same can be done with `python3 tools/drive_links.py`.
 1. Upload the file to the `documents` or `talks` Drive folder.
 2. In `_data/files.yml` add a line `"<file name>": ""` under the matching folder section
    (the Action fills in the link).
-3. In `documents.md` or `talks.md` add an item under `items:`:
+3. In `documents.md` or `meetings/talks.md` add an item under `items:`:
 
    ```yaml
    - title: Title shown on the page
@@ -51,7 +51,8 @@ its folder until the link is known. For a brand-new file that step is optional.
 
 ## Adding a meeting page
 
-Create `meeting2026.md` with a header like
+Every meeting with its own page lives in the `meetings/` folder, one file per year. Create
+`meetings/2026.md` with a header like
 
 ```
 ---
@@ -59,7 +60,9 @@ title: "2026 meeting title"
 ---
 ```
 
-and link it from `meetings.md` as `[this page](/meeting2026/)`. The address is the file name.
+and add an entry for it in `meetings/index.md` that links to `[this link](/meetings/2026/)`. The
+address is the folder plus the file name. Meetings whose details are on an external site (2023,
+2024, 2026) only need an entry in `meetings/index.md`.
 
 ## Menu and contact forms
 
