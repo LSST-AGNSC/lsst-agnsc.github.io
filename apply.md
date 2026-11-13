@@ -18,7 +18,7 @@ Those submitting Full or Core membership applications should make use of materia
 
 - The [AGN SC Roadmap](/documents/), which gives a fairly up-to-date prioritization of the various tasks for the AGN SC.
 - Slides from [recent talks](/meetings/) by AGN SC members.
-- A [recent video](https://www.youtube.com/watch?v=wjwIVsJht-E), which gives a useful summary of LSST AGN science and the overall activities of the AGN SC.  
+- A [recent video](https://www.youtube.com/watch?v=gsBmKTuTJZU), which gives a useful summary of LSST AGN science and the overall activities of the AGN SC.  
 
 Please write and save your answers in another environment and upload them here when you are ready (as this web form will not save your partially completed work).
 
