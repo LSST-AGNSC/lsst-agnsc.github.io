@@ -16,7 +16,7 @@
 
 /* Contact request forms */
 .form-pending { color: #666; }
-.form-embed { border: 1px solid #ddd; background: #fff; }
+.form-link { font-weight: bold; font-size: 1.1em; }
 
 /* Meetings page: the old editor marked some lines as small text inside headings, and used empty
    headings/paragraphs and invisible rules as vertical spacing. */
