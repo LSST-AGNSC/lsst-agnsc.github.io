@@ -12,25 +12,3 @@ Once a dispute is submitted, the Publication Panel will review the issue and, if
 If you are involved in a dispute, we encourage you to submit this form promptly to ensure a timely and fair resolution.
 
 {% include form-embed.html %}
-
-## What the form asks
-
-<!-- Fields of the original web form, kept here so the Google Form can mirror them. -->
-
-**Contact Information**
-
-- First Name *(required)*
-- Last Name *(required)*
-- Email *(required)*
-
-**Project Details**
-
-- Project ID *(required)*
-- Project Title *(required)*
-- Project Leader Name *(required)*
-- Project Leader Email *(required)*
-
-**Publication Dispute**
-
-- Type of Dispute *(required)* — options: Authorship Concern; Scientific Issue; Other
-- Issue Summary *(required)*

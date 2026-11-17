@@ -13,28 +13,3 @@ Once this form is submitted, the Publication Panel will review the materials and
 We encourage lead authors to submit this form once the manuscript is ready for community review, allowing time for feedback and any necessary revisions before final submission
 
 {% include form-embed.html %}
-
-## What the form asks
-
-<!-- Fields of the original web form, kept here so the Google Form can mirror them. -->
-
-**Contact Information**
-
-- First Name *(required)*
-- Last Name *(required)*
-- Email *(required)*
-
-**Project Details**
-
-- Project ID *(required)*
-- Project Title *(required)*
-
-**Publication Review**
-
-- Review Stage *(required)* — options: Initial Circulation; Initial Submission; Revised Circulation; Revised Submission; Official Publication
-- Notified Members *(required)* — options: Full Collaboration; Subgroup: Selection/Classification; Subgroup: Photo-z; Subgroup: Variability; Subgroup: Follow-up  
-  Please list the members of the AGN Science Collaboration to whom this publication has been circulated.
-- Request Abridged Review *(required)* — options: Yes; No  
-  Lead author may request an abridged review process under special circumstances (e.g., time-sensitive work, emergence of new results, short-notice presentations).
-- Supporting Rationale  
-  If you have requested an abridged review, please briefly describe the time-sensitive or special circumstances that support your request.
