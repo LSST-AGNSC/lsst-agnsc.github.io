@@ -1,6 +1,5 @@
 # Online forms (the old Drupal webforms). Each has its own page; 'contact: true' lists it under the Contact tab.
 # Paste the Google Form link into 'url' and that page links to the form; until then it shows a notice.
-# The old form's fields are described on each page, to help build the Google Form.
 - key: membership_application
   title: Membership Application
   description: Apply for membership in the LSST AGN Science Collaboration.
@@ -15,7 +14,7 @@
   title: Project Join Request
   description: To request to join an ongoing project.
   contact: true
-  url: ""
+  url: "https://docs.google.com/forms/d/e/1FAIpQLSfuO2i0EYER6X4VKdOBJCeJKnm-rKupaJ_IFpZfkyV0tLjIdQ/viewform"
 - key: publication_review
   title: Publication Review
   description: To initiate the internal publication review process before journal submission.
